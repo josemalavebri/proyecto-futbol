@@ -1,0 +1,51 @@
+
+.nav-color{
+    background-color: #00004b;
+    color:black;
+}   
+
+.text-color{
+    color:white;
+
+}
+
+a{
+    color:white;
+}
+
+.nav-link{
+    margin-left: 10px;
+
+}
+
+.nav-link:hover {
+    color: #ce2e2e !important;
+    transition: all 0.3s ease;
+}
+
+
+.nav-link.active{
+    background-color: #0101a7;
+    border-radius: 10px;
+}
+
+
+
+.texto{
+    font-family: Mulish;
+}
+
+.texto-liga{
+    font-size: 30px;
+}
+
+
+.back-color{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.navbar-toggler-icon{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
