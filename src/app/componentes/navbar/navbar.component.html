@@ -1,55 +1,66 @@
-
 <div class="container-fluid nav-color texto">
-    <div class="">
-    <nav class=" navbar navbar-expand-lg d-flex flex-wrap justify-content-center py-3 mb-4" >
-        <div class="container ">
-            <a
-            href="/"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
-            <img
-              src="images/balon-logo.png"
-              alt="logo de liga peruana"
-              width="60"
-              height="52"
-              class="back-color me-3"
-            />
-      
-            <span class="fs-4 text-color texto-liga m-2">Liga Peruana</span>
-          </a>
-      
-            <button class="navbar-toggler" type="button" data-bs-togle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg>
-            </button>
-            
-           <div class=" navbar-collapse-lg " id="navbarNav">
-      <ul class="nav navbar-expand-lg me-4 d-flex align-items-center m-2">
-        <li class="nav-item text-color">
-          <a href="#" class="nav-link text-white active" aria-current="page"
-            >Inicio</a>
-        </li>
-        <li class="nav-item ">
-          <a href="#" class="nav-link">Jugadores</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link ">Estadistica</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link ">Partidos</a>
-        </li>
-        <li class="nav-item ">
-          <a href="#" class="nav-link t">Recolecta</a>
-        </li>
-      </ul>
-    </div>
+  <div class="">
+    <nav class=" navbar navbar-expand-lg d-flex flex-wrap justify-content-center py-3 mb-4">
+      <div class="container ">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="images/balon-logo.png" alt="logo de liga peruana" width="60" height="52" class="back-color me-3" />
+          <span class="fs-4 text-color texto-liga m-2">Liga Peruana</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-togle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </button>
+
+        <div class=" navbar-collapse-lg " id="navbarNav">
+          <ul class="nav navbar-expand-lg me-4 d-flex align-items-center m-2">
+            <li class="nav-item text-color">
+              <a routerLink="" class="nav-link text-white active" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item ">
+              <a routerLink="" routerLinkActive="active" class="nav-link">Jugadores</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="" class="nav-link ">Estadistica</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="posiciones" class="nav-link ">Posiciones</a>
+            </li>
+            <li class="nav-item ">
+              <a routerLink="" class="nav-link t">Recolecta</a>
+            </li>
+          </ul>
         </div>
-        </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 </div>
 
-
-
+<header>
+<div class="container">
+  <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+          <div class="logo">
+              <img src="assets/hano_logo.png" class="logo" alt="">
+          </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+          <div class="menu-icon" (click)="openMenu()">
+              <i class="{{menu_icon}}"></i>
+          </div>
+          <div class="desktop_menu" [class.mobile_menu]="menuValue">
+              <ul>
+                  <li (click)="closeMenu()">Home</li>
+                  <li (click)="closeMenu()">About</li>
+                  <li (click)="closeMenu()">Courses</li>
+                  <li (click)="closeMenu()">Contact</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+</header>
